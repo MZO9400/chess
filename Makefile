@@ -28,7 +28,9 @@ LOCAL_OFILES =		\
 			*.dat \
 			$(LOCAL_MODULE_NAME).$(LOCAL_OEXT)
 
-.SILENT:	dummy clean Project
+.SILENT:	dummy
+
+.PHONY:		clean Project
 
 dummy:
 	echo Target undeclared: clean or Project
