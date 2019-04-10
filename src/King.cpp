@@ -15,7 +15,7 @@ King::~King() {
 bool King::m_isChessMoveAllowed(const Position& pos,
                                 const ChessBoard& board) const {
     if (board.m_isValidMove(pos) && (abs(m_advancerate(pos).x) == 1 ||
-                                   abs(m_advancerate(pos).y) == 1)) {
+                                     abs(m_advancerate(pos).y) == 1)) {
         return true;
     }
 

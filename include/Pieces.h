@@ -5,7 +5,6 @@
 
 #include <Position.h>
 #include <enums.h>
-#include <ChessBoard.h>
 #include <FunctionOverloads.h>
 
 class Pieces {
@@ -13,10 +12,7 @@ class Pieces {
     /** Default constructor */
     Pieces();
     /** Default destructor */
-    virtual ~Pieces() = 0;
-
-    virtual bool m_isChessMoveAllowed(const Position&, const ChessBoard&)
-    const = 0;
+    ~Pieces();
 
     Position m_getPiecePosition();
     Position m_advancerate(const Position&) const;

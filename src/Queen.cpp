@@ -21,7 +21,7 @@ bool Queen::m_isChessMoveAllowed(const Position& pos,
     }
 
     if (board.m_isValidMove(pos) && (abs(m_advancerate(pos).x) == 1 ||
-                                   abs(m_advancerate(pos).y) == 1)) {
+                                     abs(m_advancerate(pos).y) == 1)) {
         return true;
     }
 

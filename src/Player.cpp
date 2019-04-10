@@ -3,13 +3,13 @@
 #include "Player.h"
 
 Player::Player() {
-        mColor = ChessPieceColor::None;
-        king = new King;
-        queen = new Queen;
-        rook = new Rook[2];
-        bishop = new Bishop[2];
-        knight = new Knight[2];
-        pawn = new Pawn[8];
+    mColor = ChessPieceColor::None;
+    king = new King;
+    queen = new Queen;
+    rook = new Rook[2];
+    bishop = new Bishop[2];
+    knight = new Knight[2];
+    pawn = new Pawn[8];
 }
 Player::Player(const ChessPieceColor& color) {
     mColor = color;

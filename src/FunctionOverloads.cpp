@@ -18,5 +18,6 @@ std::ostream& operator<<(std::ostream& _out, const ChessBoard& board) {
 
         std::cout << std::endl;
     }
+
     return (_out);
 }
