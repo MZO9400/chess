@@ -14,7 +14,8 @@ enum class ChessPieceType {
 
 enum class ChessPieceColor {
     Black = 0,
-    White = 1
+    White = 1,
+    None = -1
 };
 
 #endif // ENUMS_H

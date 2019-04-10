@@ -2,7 +2,6 @@
 
 #ifndef CHESSBOARD_H
 #define CHESSBOARD_H
-#include <Player.h>
 #include <enums.h>
 #include <Position.h>
 
@@ -31,13 +30,11 @@ class ChessBoard {
 
     unsigned short int m_getFilesRanks() const {return mFilesRanks;}
 
-    bool isValidMove(const Position&) const;
+    bool m_isValidMove(const Position&) const;
 
   protected:
     ChessPieceType** mBoard;
     unsigned short int mFilesRanks;
-    Player p1;
-    Player p2;
   private:
 };
 

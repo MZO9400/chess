@@ -14,7 +14,7 @@ Bishop::~Bishop() {
 
 bool Bishop::m_isChessMoveAllowed(const Position& pos,
                                   const ChessBoard& board) const {
-    if (m_isMovingDiagonal(pos) && board.isValidMove(pos) &&
+    if (m_isMovingDiagonal(pos) && board.m_isValidMove(pos) &&
             !(mPiecePosition == pos)) {
         return true;
     }

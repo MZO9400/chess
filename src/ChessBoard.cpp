@@ -2,17 +2,6 @@
 
 #include "ChessBoard.h"
 
-std::ostream& operator<<(std::ostream& _out, const ChessBoard& board) {
-
-    for (int i = 0; i < board.m_getFilesRanks(); i++) {
-        for (int j = 0; j < board.m_getFilesRanks(); j++) {
-            std::cout << static_cast<char>(board.m_getBoard()[i][j]) << ' ';
-        }
-
-        std::cout << std::endl;
-    }
-}
-
 ChessBoard::ChessBoard() {
     mFilesRanks = 8;
     mBoard = new ChessPieceType*[mFilesRanks];
@@ -36,7 +25,7 @@ ChessBoard::~ChessBoard() {
 
 ChessPieceType** ChessBoard::m_getBoard() const {return mBoard;}
 
-bool ChessBoard::isValidMove(const Position& pos) const {
+bool ChessBoard::m_isValidMove(const Position& pos) const {
     if (mBoard[pos.x][pos.y] == ChessPieceType::None) {
         return true;
     }

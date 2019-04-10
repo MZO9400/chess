@@ -15,21 +15,20 @@
 #include <FunctionOverloads.h>
 
 
-class Player
-{
+class Player {
     public:
         /** Default constructor */
         Player();
         Player(const ChessPieceColor&);
         /** Default destructor */
         ~Player();
-
+        void m_setPieceColor();
     protected:
 
     private:
         ChessPieceColor mColor;
-        King king;
-        Queen queen;
+        King* king;
+        Queen* queen;
         Rook* rook;
         Bishop* bishop;
         Knight* knight;
