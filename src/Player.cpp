@@ -36,10 +36,10 @@ void Player::m_setPieceColor() {
         }
     }
 }
-King Player::m_getKing() const {
+King* Player::m_getKing() const {
     return king;
 }
-Queen Player::m_getQueen() const {
+Queen* Player::m_getQueen() const {
     return queen;
 }
 Rook* Player::m_getRooks() const {
@@ -53,4 +53,22 @@ Knight* Player::m_getKnights() const {
 }
 Pawn* Player::m_getPawns() const {
     return pawn;
+}
+void Player::m_setKing(const King& king) {
+    *(this->king) = king;
+}
+void Player::m_setQueen(const Queen& queen) {
+    *(this->queen) = queen;
+}
+void Player::m_setRook(const Rook& rook, const suint& ind) {
+    this->rook[ind] = rook;
+}
+void Player::m_setBishop(const Bishop& bishop, const suint& ind) {
+    this->bishop[ind] = bishop;
+}
+void Player::m_setKnight(const Knight& knight, const suint& ind) {
+    this->knight[ind] = knight;
+}
+void Player::m_setPawn(const Pawn& pawn, const suint& ind) {
+    this->pawn[ind] = pawn;
 }

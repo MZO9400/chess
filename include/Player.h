@@ -14,7 +14,7 @@
 #include <Pawn.h>
 #include <FunctionOverloads.h>
 
-
+typedef short unsigned int suint;
 class Player {
     public:
         /** Default constructor */
@@ -30,6 +30,14 @@ class Player {
         Bishop* m_getBishops() const;
         Knight* m_getKnights() const;
         Pawn* m_getPawns() const;
+
+        void m_setKing(const King&);
+        void m_setQueen(const Queen&);
+        void m_setRook(const Rook&, const suint&);
+        void m_setBishop(const Bishop&, const suint&);
+        void m_setKnight(const Knight&, const suint&);
+        void m_setPawn(const Pawn&, const suint&);
+
 
     protected:
 
