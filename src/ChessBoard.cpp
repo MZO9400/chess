@@ -29,6 +29,9 @@ bool ChessBoard::m_isValidMove(const Position& pos) const {
     if (mBoard[pos.x][pos.y] == ChessPieceType::None) {
         return true;
     }
+    else if (mBoard[pos.x][pos.y] == ChessPieceType::King) {
+        return false;
+    }
 
     return false;
 }

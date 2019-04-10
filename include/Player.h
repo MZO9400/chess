@@ -23,6 +23,14 @@ class Player {
         /** Default destructor */
         ~Player();
         void m_setPieceColor();
+
+        King* m_getKing() const;
+        Queen* m_getQueen() const;
+        Rook* m_getRooks() const;
+        Bishop* m_getBishops() const;
+        Knight* m_getKnights() const;
+        Pawn* m_getPawns() const;
+
     protected:
 
     private:

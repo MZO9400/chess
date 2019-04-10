@@ -36,3 +36,21 @@ void Player::m_setPieceColor() {
         }
     }
 }
+King Player::m_getKing() const {
+    return king;
+}
+Queen Player::m_getQueen() const {
+    return queen;
+}
+Rook* Player::m_getRooks() const {
+    return rook;
+}
+Bishop* Player::m_getBishops() const {
+    return bishop;
+}
+Knight* Player::m_getKnights() const {
+    return knight;
+}
+Pawn* Player::m_getPawns() const {
+    return pawn;
+}
